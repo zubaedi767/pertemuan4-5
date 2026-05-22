@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:pertemuan4/page/main_page.dart';
+import 'package:intl/date_symbol_data_local.dart'; // Sudah benar diimpor
+import 'package:intl/intl.dart';
 
-void main() {
+// UBAH BAGIAN INI MENJADI ASYNC
+void main() async {
+  // 1. Wajib tambahkan ini agar Flutter siap mengeksekusi kode async sebelum runApp
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // 2. Inisialisasi format tanggal (misal 'id_ID' untuk Indonesia)
+  // Anda bisa mengosongkan tanda kurung () jika ingin menginisialisasi semua bahasa bawaan
+  await initializeDateFormatting('id_ID', null);
+
   runApp(const MyApp());
 }
 

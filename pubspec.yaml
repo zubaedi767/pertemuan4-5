@@ -36,7 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   salomon_bottom_bar: ^3.3.2
   image_picker: ^1.0.7
+  intl: ^0.18.1
 
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
